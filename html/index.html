@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 </head>
-
 <body>
     <header>
         <h1>Weather Dashboard</h1>
@@ -17,28 +14,23 @@
     <div class="container-fluid-row">
         <div class="row">
             <h2>Search for a City:</h2>
-            <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid 1px;" id="searchTheCity">
+            <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid 1px" id="searchTheCity">
             <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
         </div>
-
         <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
             <div>
                 <h2 id="userCity" style="display: inline;">Phoenix</h2>
                 <img id="icon" style="display: inline;">
             </div>
-
-            <p id="temp">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
-            <p id="uv">UV Index:</p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+            <p id="uv"></p>
         </div>
     </div>
-
     <div class="row">
-
         <!-- button the display past search history -->
         <div class="col-sm-12 col-md-4 col-lg-3" id="pastSearches"></div>
-
         <!-- upcoming weather -->
         <div class="col-lg-9" id="weatherCards">
             <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
@@ -76,7 +68,8 @@
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="dayFiveDate">Date</h5>
+11:32
+<h5 class="card-title" id="dayFiveDate">Date</h5>
                                     <img class="cardIcon">
                                     <p class="cardHumidity">Humidity: </p>
                                     <p class="cardTemp">Temp: </p>
@@ -85,9 +78,18 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <script src="./script.js"></script>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
