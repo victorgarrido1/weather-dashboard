@@ -13,8 +13,8 @@
     </header>
     <div class="container-fluid-row">
         <div class="row">
-            <h2>Search for a City:</h2>
-            <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid 1px" id="searchTheCity">
+                      <h2>Search for a City:</h2>
+              <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid " id="searchTheCity">
             <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
         </div>
         <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
@@ -34,51 +34,51 @@
         <!-- upcoming weather -->
         <div class="col-lg-9" id="weatherCards">
             <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
-            <div class="card">
+            <div class="card" id="day-1">
                 <div class="card-body">
-                    <h5 class="card-title" id="dayOneDate">Date</h5>
+                    <h5 class="card-title" id="dayThreeDate">Date</h5>
                     <img class="cardIcon">
-                    <p class="cardHumidity">Humidity: </p>
-                    <p class="cardTemp">Temp: </p>
-                    <p class="cardWind">Wind: </p>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayTwoDate">Date</h5>
-                        <img class="cardIcon">
-                        <p class="cardHumidity">Humidity: </p>
-                        <p class="cardTemp">Temp: </p>
-                        <p class="cardWind">Wind: </p>
-                        <div class="card">
+                    <p >Humidity: <span class="cardHumidity"></span> </p>
+                    <p >Temp: <span class="cardTemp"></span> </p>
+                    <p >Wind: <span class="cardWind"></span> </p>                           
+                 </div>
+            </div>
+            <div class="card" id="day-2">
+                <div class="card-body">
+                    <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p >Humidity: <span class="cardHumidity"></span> </p>
+                    <p >Temp: <span class="cardTemp"></span> </p>
+                    <p >Wind: <span class="cardWind"></span> </p>                           
+                 </div>
+            </div>
+            <div class="card" id="day-3">
+                <div class="card-body">
+                    <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p >Humidity: <span class="cardHumidity"></span> </p>
+                    <p >Temp: <span class="cardTemp"></span> </p>
+                    <p >Wind: <span class="cardWind"></span> </p>                           
+                 </div>
+            </div>
+            <div class="card" id="day-4">
+                <div class="card-body">
+                    <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p >Humidity: <span class="cardHumidity"></span> </p>
+                    <p >Temp: <span class="cardTemp"></span> </p>
+                    <p >Wind: <span class="cardWind"></span> </p>                           
+                 </div>
+            </div>
+              <div class="card" id="day-5">
                             <div class="card-body">
                                 <h5 class="card-title" id="dayThreeDate">Date</h5>
                                 <img class="cardIcon">
-                                <p class="cardHumidity">Humidity: </p>
-                                <p class="cardTemp">Temp: </p>
-                                <p class="cardWind">Wind: </p>
-                            </div>
+                                <p >Humidity: <span class="cardHumidity"></span> </p>
+                                <p >Temp: <span class="cardTemp"></span> </p>
+                                <p >Wind: <span class="cardWind"></span> </p>                           
+                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title" id="dayFourDate">Date</h5>
-                                <img class="cardIcon">
-                                <p class="cardHumidity">Humidity: </p>
-                                <p class="cardTemp">Temp: </p>
-                                <p class="cardWind">Wind: </p>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-11:32
-<h5 class="card-title" id="dayFiveDate">Date</h5>
-                                    <img class="cardIcon">
-                                    <p class="cardHumidity">Humidity: </p>
-                                    <p class="cardTemp">Temp: </p>
-                                    <p class="cardWind">Wind: </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <script src="./script.js"></script>
 </body>
 </html>
