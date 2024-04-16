@@ -2,10 +2,6 @@ body {
     background-color: bisque;
 }
 
-header,
-main {
-    text-align: center;
-}
 
 /* in charge in only the main header */
 header {
