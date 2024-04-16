@@ -3,87 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title>CritterCast</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="mini-weather-icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1 class="mainpage-header text-center">Weather Application</h1>
     </header>
-    <div class="container-fluid-row">
-        <div class="row">
-                      <h2>Search for a City:</h2>
-              <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid " id="searchTheCity">
-            <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
-        </div>
-        <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
-            <div>
-                <h2 id="userCity" style="display: inline;">Phoenix</h2>
-                <img id="icon" style="display: inline;">
-            </div>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="uv"></p>
-        </div>
-    </div>
-    <div class="row">
-        <!-- button the display past search history -->
-        <div class="col-sm-12 col-md-4 col-lg-3" id="pastSearches"></div>
-        <!-- upcoming weather -->
-        <div class="col-lg-9" id="weatherCards">
-            <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
-            <div class="card" id="day-1">
-                <div class="card-body">
-                    <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p >Humidity: <span class="cardHumidity"></span> </p>
-                    <p >Temp: <span class="cardTemp"></span> </p>
-                    <p >Wind: <span class="cardWind"></span> </p>                           
-                 </div>
-            </div>
-            <div class="card" id="day-2">
-                <div class="card-body">
-                    <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p >Humidity: <span class="cardHumidity"></span> </p>
-                    <p >Temp: <span class="cardTemp"></span> </p>
-                    <p >Wind: <span class="cardWind"></span> </p>                           
-                 </div>
-            </div>
-            <div class="card" id="day-3">
-                <div class="card-body">
-                    <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p >Humidity: <span class="cardHumidity"></span> </p>
-                    <p >Temp: <span class="cardTemp"></span> </p>
-                    <p >Wind: <span class="cardWind"></span> </p>                           
-                 </div>
-            </div>
-            <div class="card" id="day-4">
-                <div class="card-body">
-                    <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p >Humidity: <span class="cardHumidity"></span> </p>
-                    <p >Temp: <span class="cardTemp"></span> </p>
-                    <p >Wind: <span class="cardWind"></span> </p>                           
-                 </div>
-            </div>
-              <div class="card" id="day-5">
-                            <div class="card-body">
-                                <h5 class="card-title" id="dayThreeDate">Date</h5>
-                                <img class="cardIcon">
-                                <p >Humidity: <span class="cardHumidity"></span> </p>
-                                <p >Temp: <span class="cardTemp"></span> </p>
-                                <p >Wind: <span class="cardWind"></span> </p>                           
-                             </div>
+    <main>
+        <h1>Welcome to the Weather Dashboard Application  </h1>
+        <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day. Worried if you need to bring a umbrella or maybe need to gear up with snow boots or ensuring to weather sunscreen on your way out. We help you make smarter choices so you can have a better day ahead. What in the weather are you waiting for?  Be one with the weather  </p>
+    </main>
+
+
+
+        <!-- CARDS WILL GO HERE -->
+        <div class="maincontainer mx-auto">
+            <div class="cards-container flex flex-wrap justify-around">
+                <div class="card">
+                    <div class="w-72 h-full flex flex-col gap-4 rounded-lg overflow-hidden transition-transform hover:scale-[1.03]">
+                        <a class="relative">
+                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105" src="https://placekitten.com/200/300" alt="kitten">
+                            <small class="absolute bottom-2 left-2 bg-purple-950/50 text-black py-1 px-3 rounded-full flex items-center gap-2">
+                                Lesson 1
+                            </small>
+                        </a>
+                        <div class="p-4 pt-0 flex flex-col flex-1 gap-4">
+                            <div class="flex items-center justify-between">
+                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~</h2>
+                                <small class="flex justify-between items-center text-gray-300 font-semibold">
+                                    <span class="bg-purple-600 text-yellow-500 px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                </small>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde accusamus inventore illum nihil tenetur dolore illo? Ad deserunt eum animi doloribus at! Et, sint sequi? Similique iusto reiciendis laudantium?</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincontainer mx-auto">
+            <div class="cards-container flex flex-wrap justify-around">
+                <div class="card">
+                    <div class="w-72 h-full flex flex-col gap-4  rounded-lg overflow-hidden transition-transform hover:scale-[1.03]">
+                        <a class="relative">
+                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105" src="https://placekitten.com/200/300" alt="kitten">
+                            <small class="absolute bottom-2 left-2 bg-purple-950/50 text-black py-1 px-3 rounded-full flex items-center gap-2">
+                                Lesson 1
+                            </small>
+                        </a>
+                        <div class="p-4 pt-0 flex flex-col flex-1 gap-4">
+                            <div class="flex items-center justify-between">
+                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~</h2>
+                                <small class="flex justify-between items-center text-gray-300 font-semibold">
+                                    <span class="bg-purple-600 text-yellow-500 px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                </small>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde accusamus inventore illum nihil tenetur dolore illo? Ad deserunt eum animi doloribus at! Et, sint sequi? Similique iusto reiciendis laudantium?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Add more cards here if needed -->
+        </div>
+
+        <div class="container-fluid-row">
+            <div class="row">
+                <h2>Search for a City:</h2>
+                <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid " id="searchTheCity">
+                <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
+            </div>
+            <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
+                <div>
+                    <h2 id="userCity" style="display: inline;">Phoenix</h2>
+                    <img id="icon" style="display: inline;">
+                </div>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+                <p id="uv"></p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- button the display past search history -->
+            <div class="col-sm-12 col-md-4 col-lg-3" id="pastSearches"></div>
+            <!-- upcoming weather -->
+            <div class="col-lg-9" id="weatherCards">
+                <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
+                <div class="card" id="day-1">
+                    <div class="card-body">
+                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                        <img class="cardIcon">
+                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                        <p >Temp: <span class="cardTemp"></span> </p>
+                        <p >Wind: <span class="cardWind"></span> </p>                           
+                    </div>
+                </div>
+                <div class="card" id="day-2">
+                    <div class="card-body">
+                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                        <img class="cardIcon">
+                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                        <p >Temp: <span class="cardTemp"></span> </p>
+                        <p >Wind: <span class="cardWind"></span> </p>                           
+                    </div>
+                </div>
+                <div class="card" id="day-3">
+                    <div class="card-body">
+                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                        <img class="cardIcon">
+                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                        <p >Temp: <span class="cardTemp"></span> </p>
+                        <p >Wind: <span class="cardWind"></span> </p>                           
+                    </div>
+                </div>
+                <div class="card" id="day-4">
+                    <div class="card-body">
+                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                        <img class="cardIcon">
+                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                        <p >Temp: <span class="cardTemp"></span> </p>
+                        <p >Wind: <span class="cardWind"></span> </p>                           
+                    </div>
+                </div>
+                <div class="card" id="day-5">
+                    <div class="card-body">
+                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                        <img class="cardIcon">
+                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                        <p >Temp: <span class="cardTemp"></span> </p>
+                        <p >Wind: <span class="cardWind"></span> </p>                           
+                    </div>
+                </div>
+                <!-- div to but background css ... -->
+           
                 <script src="./script.js"></script>
-</body>
-</html>
-
-
+            </body>
+            </html>
+            
+            
 
 
 

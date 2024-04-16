@@ -66,13 +66,6 @@ function fiveDayOptions(cityName) {
       day5Container.querySelector(".cardHumidity").innerText = data.list[5].main.humidity;
       day5Container.querySelector(".cardTemp").innerText = data.list[5].main.temp_min
       day5Container.querySelector(".cardWind").innerText = data.list[5].wind.speed
-
-
-
-
-
-
-
     });
 }
 

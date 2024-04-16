@@ -1,20 +1,42 @@
-header{
-    background-image: linear-gradient(to right,light blue,purple);
-    color: white;
-    text-align: center;
-    padding: 10px;
-
+body {
+    background-color: bisque;
 }
 
-.card-body{
+header,
+main {
+    text-align: center;
+}
+
+/* in charge in only the main header */
+header {
+    background-image: linear-gradient(to right, lightblue, purple);
+    color: black; /* Set the text color to black */
+    text-align: center;
+    padding: 10px;
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+}
+
+
+/* HERE WE PUT FORCE CSS FOR THE CARDS */
+.maincontainer {
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.card {
+    width: 300px; /* Adjust the width of the card as needed */
+}
+
+
+.card-body {
     background-color: darkviolet;
     color: white;
 }
 
-#icon{
+#icon {
     width: 60px;
 }
 
-.cardIcon{
+.cardIcon {
     width: 50px;
 }
