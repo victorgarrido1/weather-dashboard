@@ -1,157 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CritterCast</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="mini-weather-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-        <h1 class="mainpage-header text-center">Weather Application</h1>
+        <h1 class="mainpage-header" style="text-align: center">Weather Application</h1>
     </header>
     <main>
-        <h1>Welcome to the Weather Dashboard Application  </h1>
-        <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day. Worried if you need to bring a umbrella or maybe need to gear up with snow boots or ensuring to weather sunscreen on your way out. We help you make smarter choices so you can have a better day ahead. What in the weather are you waiting for?  Be one with the weather  </p>
+        <h1 class="mainpage-header" style="text-align: center">Welcome to CritterCast</h1>
+        <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day.
+            Worried if you need to bring a umbrella or maybe need to gear up with snow boots or ensuring to weather
+            sunscreen on your way out. We help you make smarter choices so you can have a better day ahead. What in the
+            weather are you waiting for? Be one with the weather. </p>
     </main>
 
 
-
-        <!-- CARDS WILL GO HERE -->
-        <div class="maincontainer mx-auto">
-            <div class="cards-container flex flex-wrap justify-around">
-                <div class="card">
-                    <div class="w-72 h-full flex flex-col gap-4 rounded-lg overflow-hidden transition-transform hover:scale-[1.03]">
-                        <a class="relative">
-                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105" src="https://placekitten.com/200/300" alt="kitten">
-                            <small class="absolute bottom-2 left-2 bg-purple-950/50 text-black py-1 px-3 rounded-full flex items-center gap-2">
-                                Lesson 1
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <p style="text-align: right; margin-top: 5px; margin-right: 10px;"><strong>Search weather</strong></p>        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search City or Zip Code" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Second CARD -->
+    <div class="container">
+        <div class="row" style="background: lightblue;">
+            <!-- First column -->
+            <div class="col-md">
+                <div class="cards-container">
+                    <h3 class="card-title">Weather Label</h3>
+                    <a class="relative" href="#">
+                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                            src="https://openweathermap.org/img/wn/09n@4x.png">
+                        <small class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
+                            Lesson 1
+                        </small>
+                    </a>
+                    <!-- Card content -->
+                    <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
+                        <div class="display items-center">
+                            <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~
+                            </h2>
+                            <small class="flex justify-between items-center text-gray-300 font-semibold">
+                                <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
                             </small>
-                        </a>
-                        <div class="p-4 pt-0 flex flex-col flex-1 gap-4">
-                            <div class="flex items-center justify-between">
-                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~</h2>
-                                <small class="flex justify-between items-center text-gray-300 font-semibold">
-                                    <span class="text-yellow-500 px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                                </small>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde accusamus inventore illum nihil tenetur dolore illo? Ad deserunt eum animi doloribus at! Et, sint sequi? Similique iusto reiciendis laudantium?</p>
                         </div>
+                        <!-- Description -->
+              <p> weather info here</p>
+              <p>second weather info here</p>
+              <p>as we need weather info here</p>
+              
                     </div>
                 </div>
             </div>
-        </div>
+        <!--CARD THREE  -->
+            <div class="container">
+                <div class="row" style="background: lightblue;">
+                    <!-- First column -->
+                    <div class="col-md">
+                        <div class="cards-container">
+                            <h3 class="card-title">Weather Label</h3>
 
-        <div class="maincontainer mx-auto">
-            <div class="cards-container flex flex-wrap justify-around">
-                <div class="card">
-                    <div class="w-72 h-full flex flex-col gap-4 rounded-lg overflow-hidden transition-transform hover:scale-[1.03]">
-                        <a class="relative">
-                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105" src="https://placekitten.com/200/300" alt="kitten">
-                            <small class="absolute bottom-2 left-2 bg-purple-950/50 text-black py-1 px-3 rounded-full flex items-center gap-2">
-                                Lesson 1
-                            </small>
-                        </a>
-                        <div class="p-4 pt-0 flex flex-col flex-1 gap-4">
-                            <div class="flex items-center justify-between">
-                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~</h2>
-                                <small class="flex justify-between items-center text-gray-300 font-semibold">
-                                    <span class="text-yellow-500 px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                            <a class="relative" href="#">
+                                <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                                    src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
+                                <small class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
+                                    Lesson 1
                                 </small>
+                            </a>
+                            <!-- Card content -->
+                            <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
+                                <div class="display items-center">
+                                    <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go
+                                        here ~~~</h2>
+                                    <small class="flex justify-between items-center text-gray-300 font-semibold">
+                                        <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                    </small>
+                                </div>
+                                <!-- Description -->
+                                <p> weather info here</p>
+                                <p>second weather info here</p>
+                                <p>as we need weather info here</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde accusamus inventore illum nihil tenetur dolore illo? Ad deserunt eum animi doloribus at! Et, sint sequi? Similique iusto reiciendis laudantium?</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="container">
+                            <div class="row" style="background: lightblue;">
+                                <!-- First column -->
+                                <div class="col-md">
+                                    <div class="cards-container">
+                                        <h3 class="card-title">Weather Label</h3>
 
-            <!-- Add more cards here if needed -->
-        </div>
+                                        <a class="relative" href="#">
+                                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                                                src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
+                                            <small
+                                                class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
+                                                Lesson 1
+                                            </small>
+                                        </a>
+                                        <!-- Card content -->
+                                        <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
+                                            <div class="display items-center">
+                                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather
+                                                    Headline will go here ~~~</h2>
+                                                <small
+                                                    class="flex justify-between items-center text-gray-300 font-semibold">
+                                                    <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                                </small>
+                                            </div>
+                                            <!-- Description -->
+                                            <p> weather info here</p>
+                                            <p>second weather info here</p>
+                                            <p>as we need weather info here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fourth Card -->
+                                <div class="container">
+                                    <div class="row" style="background: lightblue;">
+                                        <!-- First column -->
+                                        <div class="col-md">
+                                            <div class="cards-container">
+                                                <h3 class="card-title">Weather Label</h3>
 
-        <div class="container-fluid-row">
-            <div class="row">
-                <h2>Search for a City:</h2>
-                <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid " id="searchTheCity">
-                <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
-            </div>
-            <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
-                <div>
-                    <h2 id="userCity" style="display: inline;">Phoenix</h2>
-                    <img id="icon" style="display: inline;">
-                </div>
-                <p id="temp"></p>
-                <p id="wind"></p>
-                <p id="humidity"></p>
-                <p id="uv"></p>
-            </div>
-        </div>
-        <div class="row">
-            <!-- button the display past search history -->
-            <div class="col-sm-12 col-md-4 col-lg-3" id="pastSearches"></div>
-            <!-- upcoming weather -->
-            <div class="col-lg-9" id="weatherCards">
-                <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
-                <div class="card" id="day-1">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayThreeDate">Date</h5>
-                        <img class="cardIcon">
-                        <p >Humidity: <span class="cardHumidity"></span> </p>
-                        <p >Temp: <span class="cardTemp"></span> </p>
-                        <p >Wind: <span class="cardWind"></span> </p>                           
-                    </div>
-                </div>
-                <div class="card" id="day-2">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayThreeDate">Date</h5>
-                        <img class="cardIcon">
-                        <p >Humidity: <span class="cardHumidity"></span> </p>
-                        <p >Temp: <span class="cardTemp"></span> </p>
-                        <p >Wind: <span class="cardWind"></span> </p>                           
-                    </div>
-                </div>
-                <div class="card" id="day-3">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayThreeDate">Date</h5>
-                        <img class="cardIcon">
-                        <p >Humidity: <span class="cardHumidity"></span> </p>
-                        <p >Temp: <span class="cardTemp"></span> </p>
-                        <p >Wind: <span class="cardWind"></span> </p>                           
-                    </div>
-                </div>
-                <div class="card" id="day-4">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayThreeDate">Date</h5>
-                        <img class="cardIcon">
-                        <p >Humidity: <span class="cardHumidity"></span> </p>
-                        <p >Temp: <span class="cardTemp"></span> </p>
-                        <p >Wind: <span class="cardWind"></span> </p>                           
-                    </div>
-                </div>
-                <div class="card" id="day-5">
-                    <div class="card-body">
-                        <h5 class="card-title" id="dayThreeDate">Date</h5>
-                        <img class="cardIcon">
-                        <p >Humidity: <span class="cardHumidity"></span> </p>
-                        <p >Temp: <span class="cardTemp"></span> </p>
-                        <p >Wind: <span class="cardWind"></span> </p>                           
-                    </div>
-                </div>
-                <!-- div to but background css ... -->
-           
-                <script src="./script.js"></script>
-            </body>
-            </html>
-            
-            
+                                                <a class="relative" href="#">
+                                                    <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                                                        src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
+                                                    <small
+                                                        class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
+                                                        Lesson 1
+                                                    </small>
+                                                </a>
+                                                <!-- Card content -->
+                                                <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
+                                                    <div class="display items-center">
+                                                        <h2 class="font-semibold text-center text-2xl lg:text-3xl">
+                                                            Weather Headline will go here ~~~</h2>
+                                                        <small
+                                                            class="flex justify-between items-center text-gray-300 font-semibold">
+                                                            <span
+                                                                class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- Description -->
+                                                    <p> weather info here</p>
+                                                    <p>second weather info here</p>
+                                                    <p>as we need weather info here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row" style="background: lightblue;">
+                                        <!-- First column -->
+                                        <div class="col-md">
+                                            <div class="cards-container">
+                                                <h3 class="card-title">Weather Label</h3>
 
+                                                <a class="relative" href="#">
+                                                    <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                                                        src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
+                                                    <small
+                                                        class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
+                                                        Lesson 1
+                                                    </small>
+                                                </a>
+                                                <!-- Card content -->
+                                                <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
+                                                    <div class="display items-center">
+                                                        <h2 class="font-semibold text-center text-2xl lg:text-3xl">
+                                                            Weather Headline will go here ~~~
+                                                        </h2>
+                                                        <small
+                                                            class="flex justify-between items-center text-gray-300 font-semibold">
+                                                            <span
+                                                                class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- Description -->
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        <!-- OLD CODE -->
+                                        <!-- <div class="container-fluid-row">
+                                            <div class="row">
+                                                          <h2>Search for a City:</h2>
+                                                  <input style="width: 100%; padding: 10px margin 10px; height: 100% border-bottom: black solid " id="searchTheCity">
+                                                <button type="button" class="btn btn-primary btn-lg btn-lg btn-block" id="searchBtn">Search</button>
+                                            </div>
+                                            <div class="col" style="margin: 10px; border: black solid 1px;" id="weatherToday">
+                                                <div>
+                                                    <h2 id="userCity" style="display: inline;">Phoenix</h2>
+                                                    <img id="icon" style="display: inline;">
+                                                </div>
+                                                <p id="temp"></p>
+                                                <p id="wind"></p>
+                                                <p id="humidity"></p>
+                                                <p id="uv"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- button the display past search history -->
+                                            <div class="col-sm-12 col-md-4 col-lg-3" id="pastSearches"></div>
+                                            <!-- upcoming weather -->
+                                            <div class="col-lg-9" id="weatherCards">
+                                                <h4 style="padding-left: 15px;">5-Day Forecast:</h4>
+                                                <div class="card" id="day-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                                                        <img class="cardIcon">
+                                                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                                                        <p >Temp: <span class="cardTemp"></span> </p>
+                                                        <p >Wind: <span class="cardWind"></span> </p>                           
+                                                     </div>
+                                                </div>
+                                                <div class="card" id="day-2">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                                                        <img class="cardIcon">
+                                                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                                                        <p >Temp: <span class="cardTemp"></span> </p>
+                                                        <p >Wind: <span class="cardWind"></span> </p>                           
+                                                     </div>
+                                                </div>
+                                                <div class="card" id="day-3">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                                                        <img class="cardIcon">
+                                                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                                                        <p >Temp: <span class="cardTemp"></span> </p>
+                                                        <p >Wind: <span class="cardWind"></span> </p>                           
+                                                     </div>
+                                                </div>
+                                                <div class="card" id="day-4">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title" id="dayThreeDate">Date</h5>
+                                                        <img class="cardIcon">
+                                                        <p >Humidity: <span class="cardHumidity"></span> </p>
+                                                        <p >Temp: <span class="cardTemp"></span> </p>
+                                                        <p >Wind: <span class="cardWind"></span> </p>                           
+                                                     </div>
+                                                </div>
+                                                  <div class="card" id="day-5">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title" id="dayThreeDate">Date</h5>
+                                                                    <img class="cardIcon">
+                                                                    <p >Humidity: <span class="cardHumidity"></span> </p>
+                                                                    <p >Temp: <span class="cardTemp"></span> </p>
+                                                                    <p >Wind: <span class="cardWind"></span> </p>                           
+                                                                 </div>
+                                                            </div>
+                                                    <script src="./script.js"></script> -->
+                                        <script src="./script.js"></script>
+</body>
 
-
-
-
-
-
-
+</html>

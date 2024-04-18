@@ -8,6 +8,6 @@ Also it will save your past searches even if you refresh the page it will save p
 Re amplify- version two in progress
 Now: I will attempt to implement better practices and intend to create better structures.
 
-- [ ] rework html in interface
+- [x ] rework html in interface
 - [ ] apply new styles to reflect weather cards
 - [ ] implement js to connect with front of page
