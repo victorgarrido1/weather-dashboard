@@ -1,23 +1,25 @@
-// let pastWeather = JSON.parse(localStorage.getItem("pastWeather")) || [];
-// const buttonElement  = document.querySelector('.btn.btn-outline-success');  // this var will be for the button
+var pastWeatherOne = JSON.parse(localStorage.getItem("pastWeather")) || [];
+const searchWeatherBtn = document.querySelector("#searchWeather");
+const inputWeather = document.querySelector("#weatherForm")
+searchWeatherBtn.addEventListener("click", function () {
+  console.log(inputWeather.value);
+  fetchWeatherForCast(inputWeather.value)
+})
 
-// const buttonElement = document.querySelector('.btn.btn-outline-success');
-// const inputElement = document.querySelector('input.form-control');
-
-// buttonElement.addEventListener("click", function () {
-//   fetchWeather(inputElement.value)
-// })
-
-function fetchWeather(query) {
-  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${query}&appid=8ddd953d99be68409d70f845b7094f59`;
-
-  fetch(url)
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-}
-
-fetchWeather("Phoenix");
-
+function fetchWeatherForCast(cityName) {
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=8ddd953d99be68409d70f845b7094f59`;
+  fetch(weatherUrl)
+  .then(function (response) {
+    console.log("Hello Data", response)
+    return response.json();
+  })
+  .then(function (data) {
+    pastWeather.push(data.name);
+    localStorage.setItem("pastWeather", JSON.stringify(pastWeatherOne));
+    document.getElementById("something").textContent = data.name;
+    document.getElementById("weatherHead").textContent =data.name;
+  })
+  }
 
 
 // function fiveDayOptions(cityName) {

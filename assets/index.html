@@ -28,8 +28,8 @@
         <p style="text-align: right; margin-top: 5px; margin-right: 10px;"><strong>Search weather</strong></p>        
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search City or Zip Code" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input id="weatherForm" class="form-control me-2" type="search" placeholder="Search City or Zip Code" aria-label="Search">
+              <button id="searchWeather" class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -51,7 +51,7 @@
                     <!-- Card content -->
                     <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
                         <div class="display items-center">
-                            <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~
+                            <h2 id="weatherHead" text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~
                             </h2>
                             <small class="flex justify-between items-center text-gray-300 font-semibold">
                                 <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
