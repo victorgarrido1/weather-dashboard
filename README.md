@@ -9,5 +9,5 @@ Re amplify- version two in progress
 Now: I will attempt to implement better practices and intend to create better structures.
 
 - [x ] rework html in interface
-- [ ] apply new styles to reflect weather cards
-- [ ] implement js to connect with front of page
+- [ x] apply new styles to reflect weather cards
+- [ x] new styles to reflect updates

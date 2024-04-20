@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CritterCast</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./images/weather-fami.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font One -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <!-- Font Two -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA
+    +058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Main Headline -->
     <main>
-        <h1 class="mainpage-header" style="text-align: center">Welcome to CritterCast</h1>
-        <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day.
+        <h1 class="mainpage-header" style="text-align: center; font-size: 3em;">Welcome to CritterCast</h1>
+            <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day.
             Worried if you need to bring a umbrella or maybe need to gear up with snow boots or ensuring to weather
             sunscreen on your way out. We help you make smarter choices so you can have a better day ahead. What in the
             weather are you waiting for? Be one with the weather. </p>
     </main>
-<!-- Current Forecast Box -->
+    <!-- Current Forecast Box -->
     <div class="container" style="background: rgba(173, 216, 230, 0.7);">
         <div class="container-fluid-row">
             <div class="row">
-                <h2 style="display: block; margin: 5px auto 0; font-weight: bold;">Search Weather:</h2>
-                <input style="width: 100%; padding: 10px; margin: 10px; height: 100%; border-bottom: 1px solid black;" id="searchTheCity" placeholder="Enter city or zip code">
-                <button type="button" class="btn btn-outline-success" id="weatherBtn" title="Enter a city or zip code to search" style="display: block; margin: 10px auto;">Search</button>
+                <h2 style="display: block; margin: 5px auto 0; font-weight: bold; text-align: center;">Search Weather:
+                </h2>
+                <input
+                    style="width: 100%; padding: 10px; margin: 9px; height: 100%; border-bottom: 1px solid black; padding-left: 0;"
+                    id="searchTheCity" placeholder="Enter city or zip code">
+                <button type="button" class="btn btn-outline-success" id="weatherBtn"
+                    title="Enter a city or zip code to search"
+                    style="display: block; margin: 10px auto;">Search</button>
             </div>
         </div>
     </div>
     <div class="col" style="border: black solid 1px;" id="weatherToday">
         <div>
-            <h2 id="userCity" style="display: block; margin: 0 auto; text-align: center;">City Deets</h2>
+            <h2 id="userCity" style="display: block; margin: 0 auto; text-align: center; font-size: 2em;">City Deets
+            </h2>
         </div>
         <div class="col" style="margin: 1px; border: black solid 1px; text-align: center;" id="weatherToday">
             <div style="text-align: center;">
@@ -41,77 +59,78 @@
             </div>
         </div>
     </div>
-        <!-- button the display past search history -->
-        <!-- upcoming weather -->
-        <div class="col-lg-9 mx-auto" id="weatherCards">
-            <h4 style="padding-left: 10px; text-align: center;">5-Day Forecast:</h4>
-            <div class="card" id="day-1">
-                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
-                 <h5 class="card-title" id="dayThreeDate" style="text-align: center;">Date</h5>
-                    <img class="cardIcon">
-                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
-                    <a class="relative" href="#">
-                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                            src="https://openweathermap.org/img/wn/09n@4x.png">
-                    </a>
-                      <small class="cardTemp">Temp: <span class="cardTempValue"></span></small>       
-                      <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
-                    </div>
+    <!-- button the display past search history -->
+    <!-- upcoming weather -->
+    <div class="col-lg-9 mx-auto" id="weatherCards">
+        <h4 style="padding-left: 10px; text-align: center; font-size: 24px; font-weight: bold;">5-Day Forecast:</h4>
+        <div class="card" id="day-1">
+            <div class="card-body"
+                style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                <h5 class="card-title" id="dayThreeDate" style="text-align: center; font-size: 1.2em;">Date</h5>
+                <img class="cardIcon">
+                <p style="text-align: center; font-size: 30px;">Humidity: <span class="cardHumidity"></span></p>
+                <img class="w-full h-64 object-cover duration-200 hover:brightness-105"
+                    src="https://openweathermap.org/img/wn/09n@4x.png">
+                </a>
+                <small class="cardTemp">Temp: <span class="cardTempValue"></span></small>
+                <p style="text-align: center; font-size: 30px;">Wind: <span class="cardWind"></span></p>
             </div>
-            <div class="card" id="day-2">
-                <div class="card-body border-top" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
-                 <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
-                    <a class="relative" href="#">
-                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                            src="https://openweathermap.org/img/wn/09n@4x.png">
-                    </a>
-                    <small >Temp: <span class="cardTemp"></span> </small>
-                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
-                 </div>
+        </div>
+        <div class="card" id="day-2">
+            <div class="card-body border-top"
+                style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                <h5 class="card-title" id="dayThreeDate" style="text-align: center; font-size: 1.2em;">Date</h5>
+                <img class="cardIcon">
+                <p style="text-align: center; font-size: 30px;">Humidity: <span class="cardHumidity"></span></p>
+                <img class="w-full h-64 object-cover duration-200 hover:brightness-105"
+                    src="https://openweathermap.org/img/wn/09n@4x.png">
+                </a>
+                <small>Temp: <span class="cardTemp"></span></small>
+                <p style="text-align: center; font-size: 30px;">Wind: <span class="cardWind"></span></p>
             </div>
-            <div class="card" id="day-3">
-                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
-                  <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
-                    <a class="relative" href="#">
-                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                            src="https://openweathermap.org/img/wn/09n@4x.png">
-                    </a>
-                    <small >Temp: <span class="cardTemp"></span> </small>
-                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
-                 </div>
+        </div>
+        <div class="card" id="day-3">
+            <div class="card-body"
+                style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                <h5 class="card-title" id="dayThreeDate" style="text-align: center; font-size: 1.2em;">Date</h5>
+                <img class="cardIcon">
+                <p style="text-align: center; font-size: 30px;">Humidity: <span class="cardHumidity"></span></p>
+                <img class="w-full h-64 object-cover  duration-200 hover:brightness-105"
+                    src="https://openweathermap.org/img/wn/09n@4x.png">
+                </a>
+                <small>Temp: <span class="cardTemp"></span></small>
+                <p style="text-align: center; font-size: 30px;">Wind: <span class="cardWind"></span></p>
             </div>
-            <div class="card" id="day-4">
-                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
-                     <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>                    <a class="relative" href="#">
-                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                            src="https://openweathermap.org/img/wn/09n@4x.png">
-                    </a>
-                    <small >Temp: <span class="cardTemp"></span> </small>
-                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
-                   </div>
+        </div>
+        <div class="card" id="day-4">
+            <div class="card-body"
+                style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                <h5 class="card-title" id="dayThreeDate" style="text-align: center; font-size: 1.2em;">Date</h5>
+                <img class="cardIcon">
+                <p style="text-align: center; font-size: 30px;">Humidity: <span class="cardHumidity"></span></p>
+                <img class="w-full h-64 object-cover duration-200 hover:brightness-105"
+                    src="https://openweathermap.org/img/wn/09n@4x.png">
+                </a>
+                <small>Temp:<span class="cardTemp"></span></small>
+                <p style="text-align: center; font-size: 30px;">Wind: <span class="cardWind"></span></p>
             </div>
-            <div class="card" id="day-5">
-                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
-                  <h5 class="card-title" id="dayThreeDate">Date</h5>
-                    <img class="cardIcon">
-                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
-                    <a class="relative" href="#">
-                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                            src="https://openweathermap.org/img/wn/09n@4x.png">
-                    </a>
-                    <small >Temp: <span class="cardTemp"></span> </small>
-                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
-                    <p >Sunrise: <span class="sunrise"></span> </p>                          
-                 </div>
+        </div>
+        <div class="card" id="day-5">
+            <div class="card-body"
+                style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                <h5 class="card-title" id="dayThreeDate" style="text-align: center; font-size: 1.2em;">Date</h5>
+                <img class="cardIcon">
+                <p style="text-align: center; font-size: 30px;">Humidity: <span class="cardHumidity"></span></p>
+                <img class="w-full h-64 object-cover duration-200 hover:brightness-105"
+                    src="https://openweathermap.org/img/wn/09n@4x.png">
+                </a>
+                <small>Temp:<span class="cardTemp"></span></small>
+                <p style="text-align: center; font-size: 30px;">Wind: <span class="cardWind"></span></p>
             </div>
         </div>
     </div>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
