@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CritterCast</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" type="mini-weather-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="./images/weather-fami.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
-    <header>
-        <h1 class="mainpage-header" style="text-align: center">Weather Application</h1>
-    </header>
+    <!-- Main Headline -->
     <main>
         <h1 class="mainpage-header" style="text-align: center">Welcome to CritterCast</h1>
         <p> Todays forecast? Tomorrow forecast? We've got you covered! With CritterCast we help you plan your day.
@@ -22,178 +17,101 @@
             sunscreen on your way out. We help you make smarter choices so you can have a better day ahead. What in the
             weather are you waiting for? Be one with the weather. </p>
     </main>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <p style="text-align: right; margin-top: 5px; margin-right: 10px;"><strong>Search weather</strong></p>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <form class="d-flex" role="search">
-                <input id="weatherForm" class="form-control me-2" type="search" placeholder="Search City or Zip Code"
-                    aria-label="Search">
-                <button id="searchWeather" class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+<!-- Current Forecast Box -->
+    <div class="container" style="background: rgba(173, 216, 230, 0.7);">
+        <div class="container-fluid-row">
+            <div class="row">
+                <h2 style="display: block; margin: 5px auto 0; font-weight: bold;">Search Weather:</h2>
+                <input style="width: 100%; padding: 10px; margin: 10px; height: 100%; border-bottom: 1px solid black;" id="searchTheCity" placeholder="Enter city or zip code">
+                <button type="button" class="btn btn-outline-success" id="weatherBtn" title="Enter a city or zip code to search" style="display: block; margin: 10px auto;">Search</button>
+            </div>
         </div>
+    </div>
+    <div class="col" style="border: black solid 1px;" id="weatherToday">
+        <div>
+            <h2 id="userCity" style="display: block; margin: 0 auto; text-align: center;">City Deets</h2>
         </div>
-    </nav>
-    <!-- Second CARD -->
-    <div class="container">
-        <div class="row" style="background: lightblue;">
-            <!-- First column -->
-            <div class="col-md">
-                <div class="cards-container">
-                    <h3 id="weatherHead" class="card-title">Weather Label</h3>
+        <div class="col" style="margin: 1px; border: black solid 1px; text-align: center;" id="weatherToday">
+            <div style="text-align: center;">
+                <small id="temp"></small>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+                <p id="uv"></p>
+                <p id="weatherEmoji"></p>
+            </div>
+        </div>
+    </div>
+        <!-- button the display past search history -->
+        <!-- upcoming weather -->
+        <div class="col-lg-9 mx-auto" id="weatherCards">
+            <h4 style="padding-left: 10px; text-align: center;">5-Day Forecast:</h4>
+            <div class="card" id="day-1">
+                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                 <h5 class="card-title" id="dayThreeDate" style="text-align: center;">Date</h5>
+                    <img class="cardIcon">
+                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
                     <a class="relative" href="#">
                         <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
                             src="https://openweathermap.org/img/wn/09n@4x.png">
-                        <small class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
-                            Lesson 1
-                        </small>
                     </a>
-                    <!-- Card content -->
-                    <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
-                        <div class="display items-center">
-                            <h2 id="weatherHead" text-center text-2xl lg:text-3xl">Weather Headline will go here ~~~
-                            </h2>
-                            <small class="flex justify-between items-center text-gray-300 font-semibold">
-                                <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                            </small>
-                        </div>
-                        <!-- Description -->
-                        <p> weather info here</p>
-                        <p>second weather info here</p>
-                        <p>as we need weather info here</p>
-
+                      <small class="cardTemp">Temp: <span class="cardTempValue"></span></small>       
+                      <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
                     </div>
-                </div>
             </div>
-            <!--CARD THREE  -->
-            <div class="container">
-                <div class="row" style="background: lightblue;">
-                    <!-- First column -->
-                    <div class="col-md">
-                        <div class="cards-container">
-                            <h3 class="card-title">Weather Label</h3>
-
-                            <a class="relative" href="#">
-                                <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                                    src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
-                                <small class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
-                                    Lesson 1
-                                </small>
-                            </a>
-                            <!-- Card content -->
-                            <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
-                                <div class="display items-center">
-                                    <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather Headline will go
-                                        here ~~~</h2>
-                                    <small class="flex justify-between items-center text-gray-300 font-semibold">
-                                        <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                                    </small>
-                                </div>
-                                <!-- Description -->
-                                <p> weather info here</p>
-                                <p>second weather info here</p>
-                                <p>as we need weather info here</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row" style="background: lightblue;">
-                                <!-- First column -->
-                                <div class="col-md">
-                                    <div class="cards-container">
-                                        <h3 class="card-title">Weather Label</h3>
-
-                                        <a class="relative" href="#">
-                                            <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                                                src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
-                                            <small
-                                                class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
-                                                Lesson 1
-                                            </small>
-                                        </a>
-                                        <!-- Card content -->
-                                        <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
-                                            <div class="display items-center">
-                                                <h2 class="font-semibold text-center text-2xl lg:text-3xl">Weather
-                                                    Headline will go here ~~~</h2>
-                                                <small
-                                                    class="flex justify-between items-center text-gray-300 font-semibold">
-                                                    <span class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                                                </small>
-                                            </div>
-                                            <!-- Description -->
-                                            <p> weather info here</p>
-                                            <p>second weather info here</p>
-                                            <p>as we need weather info here</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Fourth Card -->
-                                <div class="container">
-                                    <div class="row" style="background: lightblue;">
-                                        <!-- First column -->
-                                        <div class="col-md">
-                                            <div class="cards-container">
-                                                <h3 class="card-title">Weather Label</h3>
-
-                                                <a class="relative" href="#">
-                                                    <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                                                        src="https://openweathermap.org/img/wn/10d@4x.png"
-                                                        alt="weather">
-                                                    <small
-                                                        class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
-                                                        Lesson 1
-                                                    </small>
-                                                </a>
-                                                <!-- Card content -->
-                                                <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
-                                                    <div class="display items-center">
-                                                        <h2 class="font-semibold text-center text-2xl lg:text-3xl">
-                                                            Weather Headline will go here ~~~</h2>
-                                                        <small
-                                                            class="flex justify-between items-center text-gray-300 font-semibold">
-                                                            <span
-                                                                class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                                                        </small>
-                                                    </div>
-                                                    <!-- Description -->
-                                                    <p> weather info here</p>
-                                                    <p>second weather info here</p>
-                                                    <p>as we need weather info here</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row" style="background: lightblue;">
-                                        <!-- First column -->
-                                        <div class="col-md">
-                                            <div class="cards-container">
-                                                <h3 class="card-title">Weather Label</h3>
-
-                                                <a class="relative" href="#">
-                                                    <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
-                                                        src="https://openweathermap.org/img/wn/10d@4x.png"
-                                                        alt="weather">
-                                                    <small
-                                                        class="absolute bottom-2 left-2 text-black py-1 px-3 rounded-full gap-2">
-                                                        Lesson 1
-                                                    </small>
-                                                </a>
-                                                <!-- Card content -->
-                                                <div class="p-4 d-flex pt-0 gap-4 d-flex flex-row w-6">
-                                                    <div class="display items-center">
-                                                        <h2 id="weatherHeadline" class="font-semibold text-center text-2xl lg:text-3xl">
-                                                            Weather Headline will go here please update here
-                                                        </h2>     
-                                                        <small 
-                                                            class="flex justify-between items-center text-gray-300 font-semibold">
-                                                            <span 
-                                                                class="px-2 py-1 font-bold rounded ml-auto">FREE</span>
-                                                        </small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-   <script src="./script.js"></script>
+            <div class="card" id="day-2">
+                <div class="card-body border-top" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                 <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
+                    <a class="relative" href="#">
+                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                            src="https://openweathermap.org/img/wn/09n@4x.png">
+                    </a>
+                    <small >Temp: <span class="cardTemp"></span> </small>
+                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
+                 </div>
+            </div>
+            <div class="card" id="day-3">
+                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                  <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
+                    <a class="relative" href="#">
+                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                            src="https://openweathermap.org/img/wn/09n@4x.png">
+                    </a>
+                    <small >Temp: <span class="cardTemp"></span> </small>
+                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
+                 </div>
+            </div>
+            <div class="card" id="day-4">
+                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                     <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>                    <a class="relative" href="#">
+                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                            src="https://openweathermap.org/img/wn/09n@4x.png">
+                    </a>
+                    <small >Temp: <span class="cardTemp"></span> </small>
+                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
+                   </div>
+            </div>
+            <div class="card" id="day-5">
+                <div class="card-body" style="background: rgba(255, 182, 193, 0.5); padding: 10px; border: 1px solid black; border-radius: 20px;">
+                  <h5 class="card-title" id="dayThreeDate">Date</h5>
+                    <img class="cardIcon">
+                    <p style="text-align: center;">Humidity: <span class="cardHumidity"></span></p>
+                    <a class="relative" href="#">
+                        <img class="w-full h-64 object-cover transition-[filter] duration-200 hover:brightness-105"
+                            src="https://openweathermap.org/img/wn/09n@4x.png">
+                    </a>
+                    <small >Temp: <span class="cardTemp"></span> </small>
+                    <p style="text-align: center;">Wind: <span class="cardWind"></span></p>              
+                    <p >Sunrise: <span class="sunrise"></span> </p>                          
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
