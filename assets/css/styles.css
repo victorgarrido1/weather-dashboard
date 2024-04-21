@@ -13,11 +13,18 @@ body {
 /* This is the header styling  */
 main p {
   background-color: white;
-  font-size: clamp(0.5rem, 3.5vw, 10rem);
+  font-size: clamp(0.5rem, 2.5vw, 10rem);
   border-radius: 0.5px;
 }
 
+#temp, #wind, #humidity, #uv {
+  font-size: 30px;
+}
 
+#weatherEmoji
+ {
+  font-size: 50px;
+ }
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
