@@ -50,7 +50,7 @@ This application was built with following technologies and tools:
 
 
 ## Questions or Comments 
-If you have any quesitons or comments about this application, please feel free to reach me onGithub.
+If you have any questions or comments about this application, please feel free to reach me onGithub.
 I can also be reached via email: vgarrido009@gmail.com
 
-X -- Learning along the way -vg
+x -- learning along the way -vg
