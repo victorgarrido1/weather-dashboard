@@ -42,17 +42,15 @@ This application was built with following technologies and tools:
 * [Open Weather Map API](https://openweathermap.org/)
 
 ## Demo 
+![weather-app-op](https://github.com/victorgarrido1/weather-dashboard/assets/139294878/0709982c-886f-4db5-b299-809f414e12e8)
+
+## Websites
+* [Github](https://github.com/victorgarrido1/weather-dashboard)
+* [Deployed](https://victorgarrido1.github.io/weather-dashboard)
 
 
+## Questions or Comments 
+If you have any quesitons or comments about this application, please feel free to reach me onGithub.
+I can also be reached via email: vgarrido009@gmail.com
 
-
-
-
-
-
-Re amplify- version two in progress
-Now: I will attempt to implement better practices and intend to create better structures.
-
-- [x ] rework html in interface
-- [ x] apply new styles to reflect weather cards
-- [ x] new styles to reflect updates
+X -- Learning along the way -vg
